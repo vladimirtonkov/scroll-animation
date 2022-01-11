@@ -23,10 +23,14 @@ function PositionElement(element, index, array) {
       element.style.opacity = 1
 
       if (element.closest('.hide-element-left')) {
+        
         element.classList.remove('hide-element-left')
+        
       } 
       if (element.closest('.hide-element-right')) {
+        
         element.classList.remove('hide-element-right')
+        
       } 
 
     } else {
