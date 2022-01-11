@@ -1,0 +1,71 @@
+@import 'vars';
+@import 'reset';
+@import 'global';
+
+
+
+
+
+body {
+    background-color: rgb(252, 252, 146);
+}
+
+
+
+.animation {
+    margin-top: 5px;
+
+    &__title {
+        color: #000;
+        font-size: 32px;
+        line-height: 36px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    &__elements {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 30px;
+    }
+
+    &__element {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 400px;
+        height: 200px;
+        border-radius: 26px;
+        background-color: rgb(193, 132, 250);
+        box-shadow: 2px 4px 5px rgb(0, 0, 20%);
+        transition: all 0.3s ease-in-out;
+        
+
+    }
+
+    &__element:not(:last-child) {
+        margin-bottom: 25px;
+    }
+
+
+    &__element-text {
+        color: #fff;
+        font-size: 40px;
+    }
+}
+
+
+
+
+.hide-element-left {
+    transition: all 0.3s ease-in-out;
+    margin-right: 2000px;
+}
+
+
+
+.hide-element-right {
+    transition: all 0.3s ease-in-out;
+    margin-left: 2000px;
+}
